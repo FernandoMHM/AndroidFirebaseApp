@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Island Cinema</string>
+
+    <string name="lbl_txtView_Id">ID</string>
+    <string name="lbl_txtView_Name">Nombre</string>
+    <string name="lbl_txtView_Email">E-mail</string>
+
+    <string name="lbl_txtView_Movie">Película de Interés</string>
+    <string name="lbl_button_Movie">Escoja</string>
+
+    <string name="lbl_txtView_Date">Fecha de Visita</string>
+
+
+    <string name="lbl_txtView_Tickets">Taquillas</string>
+    <string-array name="ticket_array">
+        <item>Qty</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+
+    <string name="lbl_txtView_Payment">Método de Pago</string>
+    <string name="lbl_radio_Visa">Visa</string>
+    <string name="lbl_radio_MasterCard">MasterCard</string>
+
+
+    <string name="lbl_txtView_Handycapped">Impedido?</string>
+    <string name="lbl_checkbox_Apply">Aplico</string>
+    <string name="lbl_checkbox_NotApply">No Aplica</string>
+
+
+    <string name="hint_btn_insert">Insertar</string>
+    <string name="hint_btn_update">Actualizar</string>
+    <string name="hint_btn_delete">Borrar</string>
+    <string name="hint_btn_next">Próximo Registro</string>
+    <string name="hint_btn_previous">Registro Anterior</string>
+    <string name="hint_btn_search">Buscar</string>
+
+
+    <string name="action_Settings">Settings</string>
+    <string name="action_About">About</string>
+    <string name="action_Print">Print</string>
+
+
+    <string name="error_xml_message">XML Error</string>
+    <string name="error_db_message">Database Error</string>
+    <string name="error_field_message">Error: Input Requerido</string>
+    <string name="msg_add_db">Record Creado</string>
+    <string name="msg_update_db">Record Actualizado</string>
+    <string name="msg_delete_db">Record Borrado</string>
+    <string name="msg_next_db">Próximo Record</string>
+    <string name="msg_previous_db">Record Anterior</string>
+    <string name="msg_search_db">Registro Encontrado</string>
+    <string name="msg_firstRec_db">Primer Record</string>
+    <string name="msg_lastRec_db">Último Record</string>
+    <string name="error_record_db">Record No Disponible</string>
+
+</resources>

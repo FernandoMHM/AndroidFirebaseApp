@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dip"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+        <TextView
+            android:id="@+id/textView_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_txtView_Id"
+            android:textColor="@color/colorRoyalBlue"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:ems="4"
+            android:inputType="number"
+            android:text=" "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="156dp"
+            android:layout_toEndOf="@+id/editText_Id"
+            app:srcCompat="@drawable/movie" />
+
+    </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/textView_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_txtView_Name"
+            android:textColor="@color/colorRoyalBlue"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="textCapWords|textPersonName"
+            android:text=" "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_txtView_Email"
+            android:textColor="@color/colorRoyalBlue"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp" >
+
+            <TextView
+                android:id="@+id/textView_Movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/lbl_txtView_Movie"
+                android:textColor="@color/colorRoyalBlue"
+                android:textSize="15sp" />
+
+            <FrameLayout
+                android:id="@+id/frame_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_below="@+id/textView_Movie"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="7dp" >
+
+
+                <EditText
+                    android:id="@+id/editText_Movie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapWords|textPersonName"
+                    android:text=" "
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/chooseMovie_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/frame_layout1"
+                android:layout_toEndOf="@+id/frame_layout1"
+                android:text="@string/lbl_button_Movie"
+                android:textColor="@color/colorAccent"
+                android:elevation="10dp" />
+
+            <TextView
+                android:id="@+id/textView_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frame_layout1"
+                android:ems="14"
+                android:text="@string/lbl_txtView_Date"
+                android:textColor="@color/colorRoyalBlue"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_Visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView_Date"
+                android:layout_below="@+id/textView_Date"
+                android:ems="8"
+                android:inputType="textPersonName" />
+
+            <ImageButton
+                android:id="@+id/calendar_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editText_Visit"
+                android:layout_toEndOf="@+id/editText_Visit"
+                android:elevation="10dp"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+            <TextView
+                android:id="@+id/textView_statusHandycapped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textView_Date"
+                android:layout_below="@+id/frame_layout1"
+                android:text="@string/lbl_txtView_Handycapped"
+                android:textColor="@color/colorRoyalBlue"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/layout_field_chkHandycapped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editText_Visit"
+                android:layout_alignParentRight="true"
+                android:checked="false"
+                android:ems="8"
+                android:text="@string/lbl_checkbox_Apply"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/textView_Tickets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:layout_alignParentStart="true"
+
+                android:text="@string/lbl_txtView_Tickets"
+                android:textColor="@color/colorRoyalBlue"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/layout_spinner_tickets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_Tickets"
+                android:ems="4"
+                android:entries="@array/ticket_array" />
+
+
+            <TextView
+                android:id="@+id/textView_Payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView_Tickets"
+                android:layout_toEndOf="@+id/textView_Tickets"
+                android:text="@string/lbl_txtView_Payment"
+                android:textColor="@color/colorRoyalBlue"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/layout_field_radioPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_Payment"
+                android:layout_toEndOf="@+id/textView_Tickets"
+
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/layout_field_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="8"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/lbl_radio_Visa"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:id="@+id/layout_field_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="8"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/lbl_radio_MasterCard"
+                    android:textSize="10sp" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_weight="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <ImageButton
+                android:id="@+id/insert_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:elevation="12dp"
+                android:onClick="insertNewRecord"
+                android:tooltipText="@string/hint_btn_insert"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <ImageButton
+                android:id="@+id/delete_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/insert_imgBtn"
+                android:layout_toEndOf="@+id/insert_imgBtn"
+                android:elevation="12dp"
+                android:onClick="deleteRecord"
+                android:tooltipText="@string/hint_btn_delete"
+                app:srcCompat="@android:drawable/ic_delete" />
+
+            <ImageButton
+                android:id="@+id/update_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/delete_imgBtn"
+                android:layout_toEndOf="@+id/delete_imgBtn"
+                android:elevation="12dp"
+                android:onClick="updateAddRecord"
+                android:tooltipText="@string/hint_btn_update"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <ImageButton
+                android:id="@+id/previous_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/update_imgBtn"
+                android:layout_toEndOf="@+id/update_imgBtn"
+                android:elevation="12dp"
+                android:onClick="prevoiusRecord"
+                android:tooltipText="@string/hint_btn_previous"
+                app:srcCompat="@android:drawable/ic_media_previous" />
+
+            <ImageButton
+                android:id="@+id/next_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/previous_imgBtn"
+                android:layout_toEndOf="@+id/previous_imgBtn"
+                android:elevation="12dp"
+                android:onClick="nextRecord"
+                android:tooltipText="@string/hint_btn_next"
+                app:srcCompat="@android:drawable/ic_media_next" />
+
+            <ImageButton
+                android:id="@+id/search_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/next_imgBtn"
+                android:layout_toEndOf="@+id/next_imgBtn"
+                android:elevation="12dp"
+                android:onClick="searchRecord"
+                android:tooltipText="@string/hint_btn_search"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

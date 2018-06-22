@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".AboutActivity">
+
+
+    <TextView
+        android:id="@+id/textView_heatherAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="bottom"
+        android:text= "@string/action_About"
+        android:textSize="55sp"
+        android:textColor="@color/colorRoyalBlue"/>
+
+
+    <TextView
+        android:id="@+id/textView_about"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:maxLines="5"
+        android:textColor="@color/colorGray"
+        android:textSize="15sp" />
+
+
+    <ImageView
+        android:id="@+id/returnHome_imgVie1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:onClick="returnHomefromAbout"
+        app:srcCompat="@drawable/movie" />
+
+</LinearLayout>
